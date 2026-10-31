@@ -1,0 +1,8 @@
+Compilador: Roslyn 4.11, SDK .NET 8.0.427.
+Referencias: .NET y Windows Desktop 8.0.33.
+Modelo.dll: código de salida 0
+Pruebas.dll: código de salida 0
+RutasDijkstra.dll: código de salida 0
+
+Se compilaron las fuentes de modelo, pruebas y Windows Forms, con advertencias tratadas como errores.
+La interfaz Windows Forms no se ejecutó en este entorno Linux.

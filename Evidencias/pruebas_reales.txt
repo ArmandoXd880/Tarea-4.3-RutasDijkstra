@@ -1,0 +1,16 @@
+TAREA 4.3 | Pruebas reales del modelo de grafos
+Entorno: .NET 8.0.33 | Ubuntu 24.04.3 LTS
+CORRECTO: distancias desde A: A=0 B=3 C=2 D=8 E=10 F=13.
+CORRECTO: ruta A -> C -> B -> D -> E -> F; costo 13 km.
+CORRECTO: fijación A,C,B,D,E,F y mejora de F: 14 -> 13.
+CORRECTO: pesos cero, desconexión, origen=destino, negativos rechazados y distancias long.
+CORRECTO: 50 grafos aleatorios y 263 orígenes contrastados con Floyd-Warshall.
+TOTAL: 7873 verificaciones superadas.
+TRAZA DEL EJEMPLO | Paso | Fijado | A B C D E F
+0 | Inicio | 0 INF INF INF INF INF | Inicio: origen con distancia 0.
+1 | A | 0 4 2 INF INF INF | B: INF -> 4 vía A; C: INF -> 2 vía A
+2 | C | 0 3 2 10 12 INF | B: 4 -> 3 vía C; D: INF -> 10 vía C; E: INF -> 12 vía C
+3 | B | 0 3 2 8 12 INF | D: 10 -> 8 vía B
+4 | D | 0 3 2 8 10 14 | E: 12 -> 10 vía D; F: INF -> 14 vía D
+5 | E | 0 3 2 8 10 13 | F: 14 -> 13 vía E
+6 | F | 0 3 2 8 10 13 | Sin mejoras.
