@@ -37,9 +37,7 @@ Las fuentes se compilaron con Roslyn del SDK 8.0.427 y referencias .NET y Window
 - Pruebas: programa de verificación del modelo.
 - Evidencias: registros reales de pruebas y compilación.
 - Reporte: PDF para entregar y Word editable para agregar el enlace de YouTube.
-- Guion: instrucciones de pantalla entre corchetes y texto sencillo para leer.
 
-El espacio para el enlace público del video está al final del reporte. El guion incluye la indicación de mantener la cámara en la esquina inferior derecha.
 
 ## Uso del grafo
 
